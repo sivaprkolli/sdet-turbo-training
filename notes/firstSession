@@ -1,0 +1,23 @@
+Requirements:
+
+Java:
+Maven:
+IntelliJ:
+JAVA_HOME - Setup
+
+
+Core:
+- OOPS
+- Strings
+- Exception
+- Collections
+
+OOPS: Object Oriented Programing System
+
+Classes
+Methods
+Variables
+Static
+Why static for main()
+How to create an object
+Calling uisng object/ without object
