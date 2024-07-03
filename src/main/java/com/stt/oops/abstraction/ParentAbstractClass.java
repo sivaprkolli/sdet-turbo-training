@@ -1,6 +1,6 @@
 package com.stt.oops.abstraction;
 
-public abstract class ParentClass {
+public abstract class ParentAbstractClass {
 
     public void test1(){
         System.out.println("Test1 executing");

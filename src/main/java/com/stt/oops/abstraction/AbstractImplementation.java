@@ -1,6 +1,7 @@
 package com.stt.oops.abstraction;
 
-public class AbstractImplementation extends ParentClass{
+public class AbstractImplementation extends ParentAbstractClass{
+
     @Override
     public void test2() {
         System.out.println("Test2 execution");

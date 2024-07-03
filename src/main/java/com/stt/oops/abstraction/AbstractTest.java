@@ -9,7 +9,7 @@ public class AbstractTest extends AbstractImplementation{
         AbstractImplementation abstractImplementation = new AbstractTest();
 
         //GrandParent reference = Grand child reference
-        ParentClass parentClass = new AbstractTest();
+        ParentAbstractClass parentClass = new AbstractTest();
 
         parentClass.test2();
         parentClass.test2("Test");
