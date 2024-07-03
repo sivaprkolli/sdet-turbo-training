@@ -1,0 +1,9 @@
+1. class: explicitly we need to "abstract" keyword for abstract class, for interface its default "Interface"
+2. Abstract Class: both methods having body or not having body is possible
+   Interface: by default methods are abstract methods
+
+3.Implementation/Inheritance
+Abstract Class: using extends
+Interface: using implement
+
+multiple inheritance - two ways

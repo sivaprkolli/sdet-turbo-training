@@ -1,0 +1,12 @@
+1. default - Access within the package
+2. protected - Access within the package
+3. private - not able to access outside the class
+
+1. default - not able Access outside the package
+2. protected -not able Access outside the package
+3. private - not able to access outside the class
+
+Inheritance:
+1. default - not able Access outside the package
+2. protected - Access outside the package
+3. private - not able to access outside the class
