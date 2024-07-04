@@ -6,4 +6,6 @@
 Abstract Class: using extends
 Interface: using implement
 
-multiple inheritance - two ways
+4. Multiple inheritance is not possible with Abstract class but can be possible with Interfaces
+
+5. Class can inherit 1 Abstract class and inherit multiple interfaces in the same class
