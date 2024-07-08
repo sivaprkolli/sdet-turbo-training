@@ -19,6 +19,7 @@ public class Basics {
         System.out.println("name1 :: " + name1);
 
         verifyTextPresent("Apple", 12);
+        verifyTextPresent("Samsung", 20);
     }
 
     public static void verifyTextPresent(String name, int percentage){
