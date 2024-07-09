@@ -1,3 +1,5 @@
+package com.stt.introSession;
+
 public class FirstClassReference {
     int i=5;
     String s = "Selenium";
@@ -13,8 +15,8 @@ public class FirstClassReference {
     }
 
     public static String getText(){
-        String str = "Test Automation";
-        return str;
+        String strWord = "Test Automation";
+        return strWord;
     }
 
     public int total(int e, int f){
