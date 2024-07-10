@@ -7,6 +7,7 @@ public class AboutArrays {
         String[] s = {"Selenium", "Playwright", "WebDriverIO"};
         char[] c = {'s','e','l','e','n','i','u','m'};
 
+
         System.out.println(a[5]);
         //System.out.println(a[19]);
         System.out.println(a.length);
