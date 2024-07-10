@@ -1,8 +1,6 @@
 package com.stt.exceptions;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.io.*;
 
 public class Exceptions3 {
     public static void main(String[] args) throws FileNotFoundException {
@@ -10,6 +8,32 @@ public class Exceptions3 {
         //tryAndFinallyBlock();
         getFiles();
         tryAndFinallyBlock();
+    }
+
+    public static void tryWithResources(){
+        File file = new File("poom.xml");
+        try(FileInputStream fileInputStream = new FileInputStream(file);
+            FileOutputStream fileOutputStream = new FileOutputStream(file))
+        {
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public static void multipleTryBlocks(){
+        try{
+            int a = 5;
+            try{
+                int b = a/0;
+            }catch (Exception e1){
+
+            }
+
+        }catch (Exception e){
+            throw e;
+        }
     }
 
     public static void getFile() {
