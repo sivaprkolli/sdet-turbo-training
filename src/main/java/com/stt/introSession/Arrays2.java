@@ -16,5 +16,14 @@ public class Arrays2 {
             temp = arr1[i]+1;
             System.out.println(temp);
         }
+
+        int a = 5;
+        String s1 = "9";
+        double d = 5.5;
+        System.out.println(Integer.parseInt(s1));
+        System.out.println(Double.valueOf(a));
+        System.out.println(Integer.valueOf((int) d));
+
+        System.out.println(String.valueOf(d));
     }
 }
