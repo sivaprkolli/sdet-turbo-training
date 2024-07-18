@@ -23,9 +23,7 @@ public class LinkedListTest {
         list.add(true);
         list.add('c');
         list.add(4.0f);
-
         list.add(2, "Appium");
-
         System.out.println(list);
     }
 }
