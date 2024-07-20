@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="STT">
+    <test verbose="5" name="smoke suite">
+        <classes>
+            <class name="com.testNg.learning.AnnotationsOfTestNG"/>
+        </classes>
+    </test>
+</suite>
