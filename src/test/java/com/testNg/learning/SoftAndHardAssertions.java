@@ -38,12 +38,12 @@ public class SoftAndHardAssertions {
     @Test
     public void test3(){
         System.out.println("Test Case 3");
-        softAssert.assertEquals("Selenium", "selenium");
         System.out.println("Test Case 3");
         System.out.println("Test Case 3");
         System.out.println("Test Case 3");
-        softAssert.assertEquals(1,1);
-        softAssert.assertAll();
+        Assert.assertEquals("Selenium", "selenium");
+        //softAssert.assertEquals(1,1);
+        //softAssert.assertAll();
     }
 
     @AfterMethod

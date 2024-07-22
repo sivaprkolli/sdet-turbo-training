@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ParallelTests" parallel="tests">
+    
+    <test name="Chrome" verbose="1">
+        <classes>
+            <class name="com.testNg.learning.ParallelTests"></class>
+        </classes>
+    </test>
+
+    <test name="Edge" verbose="1">
+        <classes>
+            <class name="com.testNg.learning.ParallelTests"></class>
+        </classes>
+    </test>
+
+    <test name="Firefox" verbose="1">
+        <classes>
+            <class name="com.testNg.learning.ParallelTests"></class>
+        </classes>
+    </test>
+
+    <test name="Safari" verbose="1">
+        <classes>
+            <class name="com.testNg.learning.ParallelTests"></class>
+        </classes>
+    </test>
+    
+</suite>
