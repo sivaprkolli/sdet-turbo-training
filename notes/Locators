@@ -1,0 +1,30 @@
+xpath:
+
+basic expression:
+
+//tagname[@type='value']
+//tagname[@id='value']
+
+functions:
+
+//tagname[text()='value']
+//*[normalize-space()='password']
+
+//input[starts-with(@id,'UserFirstName')]
+//input[contains(@id,'UserFirstName')]
+
+//label[contains(text(),'First')]
+//*[contains(text(),'password')]
+
+
+Axes:
+
+Acestor
+Descendant - //div[@title='SAMSUNG']/descendant::input
+Parent - //div[text()='SAMSUNG']/parent::label/child::input
+Child - //div[text()='SAMSUNG']/parent::label/child::input
+Following-sibling - //label[starts-with(@for,'CompanyName')]/following-sibling::span
+Preceding-sibling - //div[text()='SAMSUNG']/preceding-sibling::input , //div[text()='SAMSUNG']/../input
+following
+preceding
+self
