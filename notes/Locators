@@ -28,3 +28,4 @@ Preceding-sibling - //div[text()='SAMSUNG']/preceding-sibling::input , //div[tex
 following
 preceding
 self
+descendant-or-self
