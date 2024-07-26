@@ -1,5 +1,6 @@
-xpath:
+id, name, classname, tagname, linktext, partialLinktext, xpath, cssSelector
 
+xpath:
 basic expression:
 
 //tagname[@type='value']
@@ -29,3 +30,41 @@ following
 preceding
 self
 descendant-or-self
+
+
+cssSelectors:
+- no text() function, no usage of text
+
+Basic Syntax:
+tagname[type='value']
+[type='value']
+
+using id : [id='value'] => #value
+using class: [class='value'] => .value
+
+starts-with :: [for^='UserEmail']
+contains :: [for*='UserEmail']
+ends-with :: [for$='UserEmail']
+
+navigating childs:
+
+div[title='6 GB'] > div > label > input
+
+following-sibling:
+input[id^='UserEmail'] + label + span
+
+
+.leftmenu  li:last-of-type
+
+.leftmenu  li:first-of-type
+
+.leftmenu  li:nth-of-type(4)
+
+.leftmenu  li:nth-child(6)
+
+
+xpath -> get first record in the table[https://the-internet.herokuapp.com/tables]
+//table[@id='table1']/thead/tr/th/span[text()='Last Name']/ancestor::table/tbody/tr[1]/td[1]
+
+//first row data
+//table/tbody/tr[1]/td
