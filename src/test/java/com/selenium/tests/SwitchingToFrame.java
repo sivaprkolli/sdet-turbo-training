@@ -13,7 +13,7 @@ import java.time.Duration;
 public class SwitchingToFrame {
     WebDriver driver;
 
-
+// practice on :: https://the-internet.herokuapp.com/nested_frames
     @AfterTest
     public void killSession(){
         driver.quit();
@@ -34,6 +34,7 @@ public class SwitchingToFrame {
         emailSubmitButton.click();
 
         driver.switchTo().frame("ifinbox");
+
         driver.findElement(By.xpath("(//span[contains(text(),'finmeadows')])[1]")).click();
         driver.switchTo().defaultContent();
         Thread.sleep(5000);
