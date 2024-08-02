@@ -1,1 +1,2 @@
 1. InvalidSelectorException:  Compound class names not permitted
+2. org.openqa.selenium.InvalidSelectorException: invalid selector

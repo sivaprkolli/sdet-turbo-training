@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DynamicallyChangingValueAndAssert {
+public class VerifyElementUsingIsDisplayedGetText {
 
     WebDriver driver;
 

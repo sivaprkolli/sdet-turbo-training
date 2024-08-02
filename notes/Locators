@@ -17,6 +17,9 @@ functions:
 //label[contains(text(),'First')]
 //*[contains(text(),'password')]
 
+instead of text:
+//span[.='TechFini']
+
 
 Axes:
 
