@@ -8,11 +8,25 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.List;
 
 public class HandleMultipleElements {
 
     WebDriver driver;
+
+    @Test
+    public void verifyFindElementsVsFindElement(){
+        driver = new ChromeDriver();
+        driver.get("https://the-internet.herokuapp.com/");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        List<WebElement> allLinks = driver.findElements(By.cssSelector("ul > li > a11"));
+        System.out.println(allLinks);
+        System.out.println(allLinks.size());
+
+        WebElement abTestLink = driver.findElement(By.cssSelector("[href='/abtest11']"));
+        abTestLink.click();
+    }
 
     @Test
     public void verifyMultipleElements() throws InterruptedException {

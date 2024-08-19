@@ -15,7 +15,7 @@ import java.util.List;
 public class HandleTables {
 
     WebDriver driver;
-    String testData = "Web Site";
+    String testData = "Email";
 
     @Test
     public void verifyFirstRowData(){
@@ -56,14 +56,11 @@ public class HandleTables {
             headerRowActualData.add(columnHeaders.get(i).getText());
         }
 
-
         System.out.println("********************headerRwoActualData*******************");
         System.out.println("headerRowActualData " +  " :: " +  headerRowActualData);
 
         String lastNameHeaderValue = headerRowActualData.get(0);
         int indexOfHeaderName = headerRowActualData.indexOf(testData) + 1;
-
-
 
         WebElement firstRecord = driver.findElement(
                 By.xpath("//table[@id='table1']/descendant::span[text()='"+testData+"']/ancestor::table/tbody/tr[1]/td["+indexOfHeaderName+"]")
@@ -71,9 +68,6 @@ public class HandleTables {
         );
 
         System.out.println(firstRecord.getText());
-
-
-
 
         driver.quit();
     }
